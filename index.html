@@ -23,6 +23,7 @@
             <div class="rectangle__text">
                 <h1 id="text_h1">Ningún Mensaje fue encontrado</h1>
                 <textarea  class="rectangle__text-textarea" name="text" id="input_text_desencrypt" cols="40" rows="" placeholder="Ingrese el texto para encriptar o desencriptar "></textarea>
+                <button id="copy" class="copy_off">Copiar</button>
             </div>
         </div>
     </div>
@@ -34,14 +35,16 @@
     </div>
     <div class="botonera">
         <div class="botones">
-            <button id="encrypt" class="encript">Encriptar</button>
+            <button id="encrypt" class="encript">Encriptar</button>           
             <button id="desencript" class="desencript">Desencriptar</button>
          </div>
     </div>
 
     <div class="output">
-        <h1 class="output_h1">Ningún Mensaje fue encontrado</h1>
-        <p class="output_p">Ingrese el texto que desea encriptar o desencriptar</p>
+        <h1 id="output_h1" class="output_h1">Ningún Mensaje fue encontrado</h1>
+        
+        <textarea id="output_p" class="text-textarea-resp" name="" id="" cols="40" rows="4" placeholder="Ingrese el texto que desea encriptar o desencriptar"></textarea>
+        <button id="copy2" class="copy_off">Copiar</button>
 
     </div>
     
@@ -49,5 +52,7 @@
 
     <script src="./js/encryptar.js"></script>
     <script src="./js/desencryptar.js"></script>
+    <script src="./js/buttonCopy.js"></script>
+    <script src="./js/buttonCopy2.js"></script>
 </body>
 </html>
