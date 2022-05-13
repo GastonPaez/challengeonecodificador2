@@ -1,9 +1,9 @@
 var botonEncriptar = document.querySelector("#encrypt")
 
 botonEncriptar.addEventListener("click", function(){
-    console.log("presiono el boton encriptar");
+    // console.log("presiono el boton encriptar");
     var textArea = document.getElementById("input_text_encrypt").value;
-    console.log(textArea);
+    // console.log(textArea);
     listText = "";
     
     for(var i in textArea){     
@@ -31,6 +31,7 @@ botonEncriptar.addEventListener("click", function(){
     
     var desencrypt = document.querySelector("#input_text_desencrypt");
     var desencrypt_responsive = document.querySelector("#output_p")
+    desencrypt.textContent = "";   
     desencrypt.textContent = listText;   
     desencrypt_responsive.textContent = listText; 
     
